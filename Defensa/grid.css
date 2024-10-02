@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*definir areas*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 700px 100px;
+    gap: 10px;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+/*asignar areas a elementos*/
+.item1 {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 10px;
+    grid-area: header;
+}
+.header-logo{
+    background-color: azure;
+}
+.header-menu{
+    background-color: darksalmon;
+}
+.item3 {
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-area: main;
+}
+.section-slider{
+    background-color: darkorange;
+}
+.section-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: cornsilk;
+}
+.tabla{
+    background-color: darkseagreen;
+}
+.tarjetas{
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    background-color: darksalmon;
+}
+.titulo{
+    background-color: darkviolet;
+}
+.tarjeta1{
+    background-color: dodgerblue;
+}
+.tarjeta2{
+    background-color:gold ;
+}
+.section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.tabla2{
+    background-color: darkred;
+}
+.sectionMF{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: darkorange;
+}
+.mapa{
+    background-color: ghostwhite;
+}
+.form{
+    background-color: deeppink;
+}
+.item4 {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: cadetblue;
+}
+.footer-log{
+    background-color: aquamarine;
+}
+.footer-direccion{
+    background-color: red;
+}
+.footer-3{
+    background-color: blanchedalmond;
+}
+.footer-4{
+    background-color: blueviolet;
+}

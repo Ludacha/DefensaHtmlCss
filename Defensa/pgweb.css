@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 160px 700px 100px;
+    gap: 10px;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+.item1 {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 10px;
+    grid-area: header;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    transition: all 0.3s ease;
+}
+/*-------------log------------*/
+.header-logo img{
+    height: 70px;
+    width: 70px;
+}
+.header-menu{
+    background-color: darksalmon;
+    /*------menu------*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b8abd;
+    padding: 10px;
+}
+.item3 {
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-area: main;
+}
+.section-slider{
+    background-color: darkorange;
+}
+.section-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: cornsilk;
+}
+.tabla{
+    background-color: darkseagreen;
+}
+.tarjetas{
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    background-color: darksalmon;
+}
+.titulo{
+    background-color: darkviolet;
+}
+.tarjeta1{    
+    background-color: dodgerblue;
+    /*--------*/
+    display: flex;
+}
+.tarjeta2{
+    background-color:gold ;
+}
+.section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.tabla2{
+    background-color: rgb(134, 128, 219);
+}
+.sectionMF{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: darkorange;
+}
+.mapa{
+    background-color: ghostwhite;
+}
+.form{
+    background-color: deeppink;
+}
+.item4 {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: cadetblue;
+}
+.footer-log{
+    background-color: aquamarine;
+}
+.footer-direccion{
+    background-color: red;
+}
+.footer-3{
+    background-color: blanchedalmond;
+}
+.footer-4{
+    background-color: blueviolet;
+}
+/*-----------------MENU--------------------*/
+.header-menu img{
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    transition: tranform 0.8s ease;
+}
+.header-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+@keyframes cambioColor {
+    0%{color: red;}
+    50%{color: skyblue;}
+    100%{color: blueviolet;}
+}
+.header-menu ul li:nth-child(1) a:hover {
+    animation: cambioColor 0.9s infinite;
+}
+.header-menu ul li:nth-child(2) a:hover {
+    color: red;
+}
+.header-menu ul li:nth-child(3) a:hover {
+    transform: scale(1.2);
+    background-color: brown;
+    border-radius: 10px;
+}
+@keyframes rotacion {
+    0%{transform: rotate(0deg); }
+    50%{transform: rotate(45deg); }
+    100%{transform: rotate(90deg); }
+}
+.header-logo img{
+    transform: scale(0.5s);
+    border-radius: 30px;
+    animation: rotacion 0.5s infinite;
+}
+/*-----------------------tarjetas-----------------*/
+
+/*......tabla.......*/
+
+.tabla-container {
+    max-width: 700px; 
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: center;
+}
+
+th {
+    background-color: #4be67f;
+}
+/*...........mapa..................*/
+.mapa{
+    width: 500px;
+    height: 200px;
+}
+/*....................formulario.........*/
+
